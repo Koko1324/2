@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            background-color: #ffffff; /* Blue */
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+
+        header h1 {
+            margin: 0;
+        }
+
+        .nav-links {
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 19px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: changeBackground 10s infinite;
+            z-index: -1; /* Ensure background is behind all content */
+        }
+        @keyframes changeBackground {
+            0% { background-image: url('https://san.chosun.com/news/photo/201809/12081_50507_5949.jpg'); }
+            33% { background-image: url('https://t1.daumcdn.net/cfile/tistory/995D7C485E229FDE1C'); }
+            66% { background-image: url('https://san.chosun.com/news/photo/201809/12081_50507_5949.jpg'); }
+            100% { background-image: url('https://t1.daumcdn.net/cfile/tistory/995D7C485E229FDE1C'); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>모빌리티 가이드</h1>
+        <a href="">챗봇 실행</a>
+    </header>
+    <div class='background'></div>
+    
+</body>
+</html>
